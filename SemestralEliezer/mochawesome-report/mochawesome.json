@@ -1,0 +1,377 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-12-05T18:10:50.933Z",
+    "end": "2023-12-05T18:11:42.711Z",
+    "duration": 51778,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "01875d38-bb21-4d25-ae9d-108a2ecbecc9",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "86b15d06-e9e9-40c9-8881-921e676ee57e",
+          "title": "AgregarUnProductoAlCarrito",
+          "fullFile": "C:\\Users\\Danie\\Downloads\\SemestralEliezer\\test\\agregarUnProductoAlCarrito.spec.js",
+          "file": "\\test\\agregarUnProductoAlCarrito.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"AgregarUnProductoAlCarrito\"",
+              "fullTitle": "AgregarUnProductoAlCarrito \"before each\" hook in \"AgregarUnProductoAlCarrito\"",
+              "timedOut": false,
+              "duration": 1654,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "try {\n  driver = await new Builder().forBrowser('chrome').build();\n  vars = {};\n} catch (error) {\n  console.error('Error during driver setup:', error);\n}",
+              "err": {},
+              "uuid": "42354829-31f8-40fe-a735-b8dee82695be",
+              "parentUUID": "86b15d06-e9e9-40c9-8881-921e676ee57e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"AgregarUnProductoAlCarrito\"",
+              "fullTitle": "AgregarUnProductoAlCarrito \"after each\" hook in \"AgregarUnProductoAlCarrito\"",
+              "timedOut": false,
+              "duration": 266,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if (driver) {\n  await driver.quit();\n}",
+              "err": {},
+              "uuid": "ab253085-4023-4773-9bad-dab36ba94352",
+              "parentUUID": "86b15d06-e9e9-40c9-8881-921e676ee57e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "AgregarUnProductoAlCarrito",
+              "fullTitle": "AgregarUnProductoAlCarrito AgregarUnProductoAlCarrito",
+              "timedOut": false,
+              "duration": 9699,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://arrocha.com/');\nawait driver.manage().window().setRect({ width: 1382, height: 736 });\n// Espera a que el elemento con linkText \"Tiendas\" esté presente antes de realizar la acción\nconst tiendasElement = await driver.wait(until.elementLocated(By.linkText('Tiendas')), 10000);\nawait driver.actions({ bridge: true }).move(tiendasElement).perform();\n// Espera a que el elemento con id \"boost-pfs-search-box-0\" esté presente antes de realizar la acción\nconst searchBoxElement = await driver.wait(until.elementLocated(By.id('boost-pfs-search-box-0')), 10000);\nawait searchBoxElement.click();\n// Espera a que el elemento con id \"boost-pfs-search-box-0\" esté presente antes de realizar la acción\nawait searchBoxElement.sendKeys('Crema');\n// Espera a que el elemento con el selector \".boost-pfs-search-suggestion-item:nth-child(2) .boost-pfs-search-suggestion-product-title\" esté presente antes de realizar la acción\nconst suggestionElement = await driver.wait(until.elementLocated(By.css('.boost-pfs-search-suggestion-item:nth-child(2) .boost-pfs-search-suggestion-product-title')), 15000);\nawait suggestionElement.click();",
+              "err": {},
+              "uuid": "9c45ac91-5fa0-494a-bffe-04010d57af0f",
+              "parentUUID": "86b15d06-e9e9-40c9-8881-921e676ee57e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9c45ac91-5fa0-494a-bffe-04010d57af0f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9699,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "06a685d7-345a-48c7-8a82-8a136d839970",
+          "title": "IniciarSession",
+          "fullFile": "C:\\Users\\Danie\\Downloads\\SemestralEliezer\\test\\iniciarSession.spec.js",
+          "file": "\\test\\iniciarSession.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"IniciarSession\"",
+              "fullTitle": "IniciarSession \"before each\" hook in \"IniciarSession\"",
+              "timedOut": false,
+              "duration": 2044,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();\nvars = {};",
+              "err": {},
+              "uuid": "05e3e4c3-a1c5-47a3-baa1-74f66a46dcd6",
+              "parentUUID": "06a685d7-345a-48c7-8a82-8a136d839970",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"IniciarSession\"",
+              "fullTitle": "IniciarSession \"after each\" hook in \"IniciarSession\"",
+              "timedOut": false,
+              "duration": 299,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "828b986e-b5b1-408d-aa70-5a95ab8f84b4",
+              "parentUUID": "06a685d7-345a-48c7-8a82-8a136d839970",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "IniciarSession",
+              "fullTitle": "IniciarSession IniciarSession",
+              "timedOut": false,
+              "duration": 11762,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://arrocha.com/');\nawait driver.manage().window().setRect({ width: 1382, height: 736 });\n// Espera a que el elemento con linkText \"Ingresar\" esté presente antes de realizar la acción\nconst loginLinkElement = await driver.wait(until.elementLocated(By.linkText('Ingresar')), 5000);\nawait loginLinkElement.click();\n// Espera a que el elemento con id \"customer_email\" esté presente antes de realizar la acción\nconst emailInputElement = await driver.wait(until.elementLocated(By.id('customer_email')), 5000);\nawait emailInputElement.click();\nawait emailInputElement.sendKeys('danielastar3102@gmail.com');\n// Espera a que el elemento con id \"customer_password\" esté presente antes de realizar la acción\nconst passwordInputElement = await driver.wait(until.elementLocated(By.id('customer_password')), 5000);\nawait passwordInputElement.click();\nawait passwordInputElement.sendKeys('daniela1234*');\n// Espera a que el elemento con el selector \".form-action--submit\" esté presente antes de realizar la acción\nconst submitButtonElement = await driver.wait(until.elementLocated(By.css('.form-action--submit')), 5000);\nawait submitButtonElement.click();",
+              "err": {},
+              "uuid": "a063a30b-cbcd-4859-82a1-c7872361faf9",
+              "parentUUID": "06a685d7-345a-48c7-8a82-8a136d839970",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a063a30b-cbcd-4859-82a1-c7872361faf9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11762,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "047af646-f3b6-4535-88b6-1812d5b57d18",
+          "title": "Registrarse",
+          "fullFile": "C:\\Users\\Danie\\Downloads\\SemestralEliezer\\test\\registrarse.spec.js",
+          "file": "\\test\\registrarse.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Registrarse\"",
+              "fullTitle": "Registrarse \"before each\" hook in \"Registrarse\"",
+              "timedOut": false,
+              "duration": 2060,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();\nvars = {};",
+              "err": {},
+              "uuid": "087a8ff1-bba4-45ea-9fb9-0d771479a908",
+              "parentUUID": "047af646-f3b6-4535-88b6-1812d5b57d18",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Registrarse\"",
+              "fullTitle": "Registrarse \"after each\" hook in \"Registrarse\"",
+              "timedOut": false,
+              "duration": 112,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "622d3080-2939-4736-8d3c-6496b5280d19",
+              "parentUUID": "047af646-f3b6-4535-88b6-1812d5b57d18",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Registrarse",
+              "fullTitle": "Registrarse Registrarse",
+              "timedOut": false,
+              "duration": 11951,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://arrocha.com/');\nawait driver.manage().window().setRect({ width: 1382, height: 736 });\n// Espera a que el elemento con linkText \"Ingresar\" esté presente antes de realizar la acción\nconst loginLinkElement = await driver.wait(until.elementLocated(By.linkText('Ingresar')), 50000);\nawait loginLinkElement.click();\n// Realiza un desplazamiento hacia abajo en la página\nawait driver.executeScript('window.scrollTo(0, 100)');\n// Espera a que el elemento con id \"customer_register_link\" esté presente antes de realizar la acción\nconst registerLinkElement = await driver.wait(until.elementLocated(By.id('customer_register_link')), 50000);\nawait registerLinkElement.click();\n// Espera a que el elemento con id \"686772\" esté presente antes de realizar la acción\nconst firstNameElement = await driver.wait(until.elementLocated(By.id('686772')), 50000);\nawait firstNameElement.click();\nawait firstNameElement.sendKeys('Daniela');\n// Espera a que el elemento con id \"119233\" esté presente antes de realizar la acción\nconst lastNameElement = await driver.wait(until.elementLocated(By.id('119233')), 50000);\nawait lastNameElement.click();\nawait lastNameElement.sendKeys('Reyes');\n// Espera a que el elemento con id \"126009\" esté presente antes de realizar la acción\nconst phoneNumberElement = await driver.wait(until.elementLocated(By.id('126009')), 50000);\nawait phoneNumberElement.click();\nawait phoneNumberElement.sendKeys('8-123-456');\n// Espera a que el elemento con id \"109309\" esté presente antes de realizar la acción\nconst birthdateElement = await driver.wait(until.elementLocated(By.id('109309')), 50000);\nawait birthdateElement.click();\nawait birthdateElement.sendKeys('31-01-2002');\n// Espera a que el elemento con id \"value1-102623option1\" esté presente antes de realizar la acción\nconst genderElement = await driver.wait(until.elementLocated(By.id('value1-102623option1')), 50000);\nawait genderElement.click();\n// Espera a que el elemento con id \"169789\" esté presente antes de realizar la acción\nconst emailElement = await driver.wait(until.elementLocated(By.id('169789')), 50000);\nawait emailElement.click();\nawait emailElement.sendKeys('daniela@gmail.com');\n// Espera a que el elemento con id \"726232\" esté presente antes de realizar la acción\nconst phoneElement = await driver.wait(until.elementLocated(By.id('726232')), 50000);\nawait phoneElement.click();\nawait phoneElement.sendKeys('+507 2211 4420');\n// Espera a que el elemento con id \"199093\" esté presente antes de realizar la acción\nconst termsCheckboxElement = await driver.wait(until.elementLocated(By.id('199093')), 50000);\nawait termsCheckboxElement.click();\n// Espera a que el elemento con id \"209151\" esté presente antes de realizar la acción\nconst submitButtonElement = await driver.wait(until.elementLocated(By.id('209151')), 50000);\nawait submitButtonElement.click();\n// Realiza un desplazamiento hacia abajo en la página\nawait driver.executeScript('window.scrollTo(0, 159)');",
+              "err": {
+                "message": "ElementClickInterceptedError: element click intercepted: Element <input id=\"119233\" type=\"text\" placeholder=\"\" autocomplete=\"family-name\" aria-required=\"true\" aria-labelledby=\"119233label\" data-cf-input=\"\" data-cf-invalid=\"true\" data-cf-column-key=\"last_name\" name=\"last_name\" value=\"\"> is not clickable at point (826, 572). Other element would receive the click: <span id=\"cookieconsent:desc\" class=\"cc-message\">...</span>\n  (Session info: chrome=119.0.6045.200)",
+                "estack": "ElementClickInterceptedError: element click intercepted: Element <input id=\"119233\" type=\"text\" placeholder=\"\" autocomplete=\"family-name\" aria-required=\"true\" aria-labelledby=\"119233label\" data-cf-input=\"\" data-cf-invalid=\"true\" data-cf-column-key=\"last_name\" name=\"last_name\" value=\"\"> is not clickable at point (826, 572). Other element would receive the click: <span id=\"cookieconsent:desc\" class=\"cc-message\">...</span>\n  (Session info: chrome=119.0.6045.200)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:745:17)\n    at async Context.<anonymous> (test\\registrarse.spec.js:40:5)",
+                "diff": null
+              },
+              "uuid": "ccc29054-fb98-4311-9612-d3be0083aea8",
+              "parentUUID": "047af646-f3b6-4535-88b6-1812d5b57d18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "ccc29054-fb98-4311-9612-d3be0083aea8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11951,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "d3477b89-5739-4198-bb2b-ec605dea38b4",
+          "title": "ValidarContactenos",
+          "fullFile": "C:\\Users\\Danie\\Downloads\\SemestralEliezer\\test\\validarContactenos.spec.js",
+          "file": "\\test\\validarContactenos.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"ValidarContactenos\"",
+              "fullTitle": "ValidarContactenos \"before each\" hook in \"ValidarContactenos\"",
+              "timedOut": false,
+              "duration": 1735,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build();\nvars = {};",
+              "err": {},
+              "uuid": "da2e57e9-3aa0-48a7-a105-3e3416d7bdd1",
+              "parentUUID": "d3477b89-5739-4198-bb2b-ec605dea38b4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"ValidarContactenos\"",
+              "fullTitle": "ValidarContactenos \"after each\" hook in \"ValidarContactenos\"",
+              "timedOut": false,
+              "duration": 201,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "4d8b4cf8-1689-4aba-b02e-828de01f8100",
+              "parentUUID": "d3477b89-5739-4198-bb2b-ec605dea38b4",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "ValidarContactenos",
+              "fullTitle": "ValidarContactenos ValidarContactenos",
+              "timedOut": false,
+              "duration": 9977,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get('https://arrocha.com/');\nawait driver.manage().window().setRect({ width: 1382, height: 736 });\n// Espera a que el elemento con linkText \"Contáctanos\" esté presente antes de realizar la acción\nconst contactLinkElement = await driver.wait(until.elementLocated(By.linkText('Contáctanos')), 20000);\nawait contactLinkElement.click();\n// Espera a que el elemento con id \"contact_name\" esté presente antes de realizar la acción\nconst nameInputElement = await driver.wait(until.elementLocated(By.id('contact_name')), 20000);\nawait nameInputElement.click();\nawait nameInputElement.sendKeys('Juan');\n// Espera a que el elemento con id \"contact_email\" esté presente antes de realizar la acción\nconst emailInputElement = await driver.wait(until.elementLocated(By.id('contact_email')), 20000);\nawait emailInputElement.click();\nawait emailInputElement.sendKeys('juan@gmail.com');\n// Espera a que el elemento con id \"contact_phone\" esté presente antes de realizar la acción\nconst phoneInputElement = await driver.wait(until.elementLocated(By.id('contact_phone')), 20000);\nawait phoneInputElement.click();\nawait phoneInputElement.sendKeys('66782020');\n// Espera a que el elemento con id \"contact_message\" esté presente antes de realizar la acción\nconst messageInputElement = await driver.wait(until.elementLocated(By.id('contact_message')), 20000);\nawait messageInputElement.click();\nawait messageInputElement.sendKeys('Test 3 universidad');\n// Espera a que el elemento con la clase \".contact-form-button\" esté presente antes de realizar la acción\nconst submitButtonElement = await driver.wait(until.elementLocated(By.css('.contact-form-button')), 20000);\nawait submitButtonElement.click();",
+              "err": {
+                "message": "ElementClickInterceptedError: element click intercepted: Element <textarea class=\"form-field-input form-field-textarea\" id=\"contact_message\" name=\"contact[message]\"></textarea> is not clickable at point (674, 536). Other element would receive the click: <div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" class=\"cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--350809397 \" style=\"\">...</div>\n  (Session info: chrome=119.0.6045.200)",
+                "estack": "ElementClickInterceptedError: element click intercepted: Element <textarea class=\"form-field-input form-field-textarea\" id=\"contact_message\" name=\"contact[message]\"></textarea> is not clickable at point (674, 536). Other element would receive the click: <div role=\"dialog\" aria-live=\"polite\" aria-label=\"cookieconsent\" aria-describedby=\"cookieconsent:desc\" class=\"cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--350809397 \" style=\"\">...</div>\n  (Session info: chrome=119.0.6045.200)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:524:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:601:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:529:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:745:17)\n    at async Context.<anonymous> (test\\validarContactenos.spec.js:43:5)",
+                "diff": null
+              },
+              "uuid": "5151543e-ee79-4cac-a83d-72023f2976c0",
+              "parentUUID": "d3477b89-5739-4198-bb2b-ec605dea38b4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5151543e-ee79-4cac-a83d-72023f2976c0"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9977,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
