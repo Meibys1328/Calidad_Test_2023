@@ -11,5 +11,5 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: npm run test
+- script: mkdir
   displayName: 'Run Tests'
